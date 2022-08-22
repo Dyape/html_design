@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <title>Student Information</title>
+    <link rel ="stylesheet" type="text/css">
+
+    <style>
+        body{background-color:dimgray;}
+        h2{font-family:Verdana; font-size: 25px; text-align: center;}
+        fieldset{background-color:whitesmoke; width: 50%; box-shadow: 0 0 5px 3px black; min-width:420px; margin:auto;}
+        input{height: 20px;}
+        input.user{height: 20px; width: 190px; margin-right: 30px;} 
+        input.age{height: 20px; width: 70px; margin-right: 40px;}
+        input.bday{height: 20px; width: 150px; margin-right: 50px;}
+        input.address{height: 20px; width: 290px;}
+        input[type="text"] {background-color: whitesmoke;}
+        input[type="number"] {background-color: whitesmoke;}
+        input[type="date"] {background-color:whitesmoke;}
+        input {margin: 2px; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid;}
+        input.Guser{height: 20px; width: 150px}
+        input.Ruser{height: 20px; width: 80px}
+        input.wplace{height: 20px;}
+        input.med{height: 25px; width: 700px;}
+        input.acad{height: 20px; width: 400px;}
+        input.y{margin-left: 50px;}
+        input.relative{height: 30px; width: 700px;}
+        input.date{height: 40px; width: 150px;}
+        
+        
+        label{font-family: 'Courier New'; font-size: 20px;}
+        label.gender{margin-right: 20px;}
+        label.y{margin-left: 10px; margin-right: 10px;}
+        
+
+    </style>
+
+
+    <body>
+        
+        <form action="Student Information">
+            <fieldset>
+                <h2>Student Information Sheet</h2>
+                <br><br>
+                    <label for="Sname">Student's Name: </label>
+                        <input class="user" type="text" name="Sname" id="Sname" placeholder="LN,FN, M.I"> 
+
+                            <label for="age">Age</label>
+                                <input class="age" id="age" type="number" min="1" step="1" max="25">
+                               
+                                    <label  for="Gender">Gender: </label>
+                                        <input type="radio" name="info" id="Male" value="">
+                                            <label class="gender" for="Male">Male</label>
+                                                <input type="radio" name="info" id="Female" value="">
+                                                    <label class="gender" for="Female">Female</label><br><br>
+                                                        <label for="Bday">Birthday: </label>
+                                                            <input class="bday" id="Bday" type="date" id="birthday" name="birthday">
+                                                                <label for="address">Adress: </label>
+                                                                    <input class="address" type="text" id="address" placeholder="Full Adress here">
+                                                                    <br><br>
+                                                                        <label for="Gname">Guardian's Name(s): </label>
+                                                                            <input class="Guser" type="text" name="Gname" id="Gname" placeholder="LN,FN, M.I">
+                                                                                <label for="religion">Religion:</label>
+                                                                                    <input type="text" id="religion"><br><br>
+                                                                                        <label for="Ruser">Relationship to Student: </label>
+                                                                                            <input class="Ruser" type="text"  id="Ruser">
+                                                                                            <label for="telephone">Telephone: </label>
+                                                                                                <input class="user" type="text" id="telephone"><br><br>
+                                                                                                    <label for="mname">Mother's Name: </label>
+                                                                                                        <input class="user" type="text" id="mname">
+                                                                                                            <label for="wplace">Workplace: </label>
+                                                                                                                <input class="wplace" type="text" id="wplace"><br><br>
+                                                                                                                    <label for="fname">Father's Name: </label>
+                                                                                                                        <input class="user" type="text" id="fname">
+                                                                                                                            <label for="wplace2">Workplace: </label>
+                                                                                                                                <input class="wplace" type="text" id="wplace2"><br><br>
+                                                                                                                                    <label for="med">Medical Issues/Allergies/Medication: </label><br>
+                                                                                                                                        <input class="med" type="text" id="med">
+                                                                                                                                        <br><br><br>
+                                                                                                                                        <label for="acad">Academic Challenges: </label>
+                                                                                                                                    <input class="acad" type="text" id="acad"><br><br>
+                                                                                                                            <label for="q1">Does Your Child have a Devices?</label>
+                                                                                                                 <input class="y" type="radio" name="info" id="yes" value="">
+                                                                                                     <label class="y" for="yes">Yes</label>
+                                                                                        <input class="y" type="radio" name="info" id="no" value="">
+                                                                                <label class="y" for="no">No</label><br><br><br>
+                                                                        <label for="q2">What kind od Device is your child using</label>
+                                                                <input type="text" id="q2"><br><br><br>
+                                                            <label for="q3">Do you Have Issue with the Internet?</label>
+                                                        <input class="y" type="radio" name="info" id="yes2" value="">
+                                                    <label class="y" for="yes2">Yes</label>
+                                                <input class="y" type="radio" name="info" id="no2" value="">
+                                             <label class="y" for="no2">No</label><br><br><br>
+                                         <label for="relatives">Name of any relatives attending the school and grade they are in.</label><br><br>
+                                    <input class="relative" type="text" name="" id="relatives"><br><br><br><br><br>
+                                <label for="date">Date: </label>
+                            <input class="date" id="date" type="date" id="birthday" name="birthday">                                  
+                                                                                           
+                                                                                   
+            </fieldset>
+        </form>
+
+        
+    </body>
+</html>
